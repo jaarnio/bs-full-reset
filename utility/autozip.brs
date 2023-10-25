@@ -1,0 +1,5 @@
+MoveFile("SD:/autorun.brs", "SD:/autorun.brs_old")
+package = CreateObject("roBrightPackage", "SD:/autorun.zip")
+package.Unpack("SD:/")
+MoveFile("SD:/autorun.zip", "SD:/autorun.zip_invalid")
+RebootSystem()
